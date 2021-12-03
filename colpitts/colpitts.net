@@ -1,0 +1,35 @@
+* C:\Users\clee4\Documents\2021-2022\AD Comms\AnalogDigitalComms_HardwareRadio\colpitts\colpitts.asc
+V1 +5V 0 5
+V2 +2.5V 0 2.5
+XU2 +2.5V N002 +5V 0 N003 LT1413
+XU3 +2.5V N010 +5V 0 N011 LT1413
+R4 N002 recieve 40000k
+R5 N010 N012 40000k
+D1 N002 N003 D
+D2 N010 N011 D
+R6 N005 N003 40000k
+R7 N005 N011 40000k
+XU4 +2.5V N005 +5V 0 N006 LT1413
+R8 N006 N005 40000k
+D3 N006 N007 D
+XU5 +2.5V N007 +5V 0 Vout LT1413
+R9 Vout N007 40000k
+L2 N001 N008 10m
+R10 N004 N008 47k
+R11 output1 N004 160k
+R12 output1 N001 47k
+C3 N001 0 0.22µ
+C4 N008 0 0.22µ
+XU6 +2.5V N004 +5V 0 output1 LT1413
+V4 N012 0 SINE(2.5 .25 25000)
+R16 0 N009 10k
+C1 N009 0 16n
+D7 Vout N009 D
+XU1 output1 recieve +5V 0 recieve LT1413
+XU7 N009 message +5V 0 message LT1413
+.model D D
+.lib C:\Users\clee4\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 0.101 0.1 uic
+.lib LTC.lib
+.backanno
+.end
