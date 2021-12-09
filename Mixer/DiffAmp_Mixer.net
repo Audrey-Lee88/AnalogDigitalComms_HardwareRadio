@@ -1,9 +1,9 @@
 * C:\Users\alee2\Documents\GitHub\AnalogDigitalComms_HardwareRadio\Mixer\DiffAmp_Mixer.asc
 Q1 N001 Input1 N003 0 2N3904
-Q2 N002 Input2 N003 0 2N3904
+Q2 N002 0 N003 0 2N3904
 R1 Vcc N001 270
 R2 Vcc N002 270
-R3 N003 0 270
+R3 N003 Input2 270
 E1 out 0 N001 N002 1
 V1 Input1 0 SINE(1m 0.25 1.1k)
 V2 Input2 0 SINE(1m .5 0.525k)
