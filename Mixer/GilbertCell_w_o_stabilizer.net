@@ -1,0 +1,28 @@
+* C:\Users\alee2\Documents\GitHub\AnalogDigitalComms_HardwareRadio\Mixer\GilbertCell_w_o_stabilizer.asc
+Q1 N001 N003 N005 0 2N3904
+Q2 N002 N004 N005 0 2N3904
+Q6 N005 N007 N009 0 2N3904
+R1 0 Input1 50
+R2 Vcc N001 270
+R3 Vcc N002 270
+R4 N009 0 270
+V3 Vcc 0 12
+Q3 N001 N004 N006 0 2N3904
+Q4 N002 N003 N006 0 2N3904
+Q5 N006 N008 N009 0 2N3904
+C2 N003 Input1 0.1µ
+V1 Input1 0 SINE(1m 0.25 1.1g)
+R13 0 N004 2.2k
+R14 0 N003 2.2k
+R15 0 N008 2.2k
+E1 out 0 N001 N002 1
+V2 Input2 0 SINE(1m .5 0.525g)
+R5 0 Input2 50
+C1 N007 Input2 0.1µ
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\alee2\AppData\Local\LTspiceXVII\lib\cmp\standard.bjt
+.include engr2420.sub
+.tran 0 1000n 0 100p
+.backanno
+.end

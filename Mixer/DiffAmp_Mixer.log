@@ -1,0 +1,22 @@
+Circuit: * C:\Users\alee2\Documents\GitHub\AnalogDigitalComms_HardwareRadio\Mixer\DiffAmp_Mixer.asc
+
+WARNING: Less than two connections to node OUT.  This node is used by E1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Dec 08 20:25:56 2021
+Total elapsed time: 0.667 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 142734
+traniter = 142727
+tranpoints = 51851
+accept = 33846
+rejected = 18005
+matrix size = 16
+fillins = 10
+solver = Normal
+Matrix Compiler1: 1.26 KB object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.38 KB object code size  0.1/0.1/[0.1]
+
